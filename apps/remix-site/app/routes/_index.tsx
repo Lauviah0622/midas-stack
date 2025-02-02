@@ -1,4 +1,4 @@
-import type { MetaFunction } from "@remix-run/cloudflare";
+import type { HeadersFunction, MetaFunction } from "@remix-run/cloudflare";
 
 export const meta: MetaFunction = () => {
   return [
@@ -6,6 +6,12 @@ export const meta: MetaFunction = () => {
     { name: "description", content: "Welcome to Remix!" },
   ];
 };
+
+export const headers: HeadersFunction = () => {
+  return {
+    'Cache-Control': 'max-age=3600',
+  };
+}
 
 export default function Index() {
   return (
