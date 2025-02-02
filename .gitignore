@@ -1,6 +1,8 @@
 # build output
 dist/
 .output/
+build/
+
 
 # dependencies
 node_modules/
@@ -11,10 +13,13 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# cache
+.cache/
 
 # environment variables
 .env
 .env.production
+.dev.vars
 
 # macOS-specific files
 .DS_Store
@@ -24,3 +29,6 @@ pnpm-lock.yaml
 .astro
 
 .keep
+
+# cloud flare wrangler
+.wrangler

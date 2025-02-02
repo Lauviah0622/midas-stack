@@ -8,9 +8,9 @@
     "node": "^18.17.1 || ^20.3.0 || >= 21.0.0"
   },
   "scripts": {
-    "dev": "pnpm --filter=apps/* run dev",
+    "dev": "pnpm --filter=remix-site run dev",
     "start": "pnpm run dev",
-    "build": "npm install -d pnpm && pnpm --filter=apps/* run build"
+    "build": "npm install -d pnpm && pnpm --filter=remix-site run build"
   },
   "devDependencies": {
     "@eslint/js": "^9.16.0",

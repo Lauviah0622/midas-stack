@@ -42,7 +42,7 @@ const metadataDefinition = () =>
           site: z.string().optional(),
           cardType: z.string().optional(),
         })
-        .optional(),
+      .optional(),
     })
     .optional();
 
