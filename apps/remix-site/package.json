@@ -6,7 +6,8 @@
   "scripts": {
     "build": "remix vite:build",
     "deploy": "pnpm run build && wrangler pages deploy",
-    "dev": "remix vite:dev",
+    "remix-dev": "remix vite:dev",
+    "dev": "pnpm exec tinacms dev -c 'pnpm run remix-dev'",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "wrangler pages dev ./build/client",
     "typecheck": "tsc",
