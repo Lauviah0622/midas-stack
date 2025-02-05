@@ -16,13 +16,20 @@
     "cf-typegen": "wrangler types"
   },
   "dependencies": {
+    "@octokit/rest": "^21.1.0",
     "@remix-run/cloudflare": "^2.15.2",
     "@remix-run/cloudflare-pages": "^2.15.2",
     "@remix-run/react": "^2.15.2",
+    "@tinacms/datalayer": "^1.3.11",
+    "@upstash/redis": "^1.34.3",
     "isbot": "^4.1.0",
+    "js-base64": "^3.7.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tinacms": "^2.6.1"
+    "tinacms": "^2.6.1",
+    "tinacms-authjs": "^9.0.2",
+    "tinacms-gitprovider-github": "^2.0.11",
+    "upstash-redis-level": "^1.1.1"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20250124.3",
